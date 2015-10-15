@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storage Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        // Wait for device API libraries to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+            localStorage.setItem("Name", "Ruhi");
+            localStorage.setItem("Phone", "12345");
+            alert("Name : " + localStorage.getItem("Name")  + "\n" +
+            "Phone No : " + localStorage.getItem("Phone"));
+
+        }
+
+    </script>
+</head>
+<body>
+<h1>Demo</h1>
+<p>localStorage</p>
+</body>
+</html>
